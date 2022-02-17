@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { useRef } from 'react';
 import Avatar from './Avatar';
+import HeaderOptions from './HeaderOptions';
 
 function Header() {
     const router = useRouter();
@@ -58,6 +59,9 @@ function Header() {
 
 
       </div>
+
+      {/* HeaderOPtions */}
+      <HeaderOptions />
 
     </header>
   ); 

@@ -1,7 +1,8 @@
 import React from 'react';
 
 function Avatar({ url, className }) {
-  return (<img 
+  return (
+    <img 
      loading='lazy'
      src = { url }
      className= {`h-10 rounded-full  cursor-pointer  
