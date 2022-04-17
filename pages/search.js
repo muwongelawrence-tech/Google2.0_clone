@@ -4,7 +4,7 @@ import Header from '../components/Header';
 
 
 function Search({ results }) {
-  //  console.log(results);
+    //console.log(results);
   return (
     <div className="">
        <Head> 
@@ -16,6 +16,7 @@ function Search({ results }) {
        <Header />
 
        {/* Search Results */}
+       
     </div>
   );
 }
