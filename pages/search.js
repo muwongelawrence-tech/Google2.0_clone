@@ -4,7 +4,8 @@ import Header from '../components/Header';
 
 
 function Search({ results }) {
-    //console.log(results);
+    // console.log(results);
+    // console.log(results);
   return (
     <div className="">
        <Head> 
@@ -25,7 +26,7 @@ export default Search;
 
 export async function getServerSideProps(context){ 
   
-  const useDummyData = false;
+  // const useDummyData = false;
 
   const data = 
   await fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.Api_key}&cx=${process.env.Context_key}&q=${context.query.term}`
