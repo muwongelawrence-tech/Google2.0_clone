@@ -14,16 +14,16 @@ export default function Home() {
   const router = useRouter();
   const searchInputRef = useRef(null);
 
+  //search functionality
   const search = e => {
     e.preventDefault();
     
     const term = searchInputRef.current.value;
+   // console.log(term);
 
     if(!term) return;
 
-    router.push(`/search?term = ${ term }`);
-    
-
+    router.push(`/search?term=${ term }`);
   }
 
   return (
@@ -89,8 +89,8 @@ export default function Home() {
 
          <div className = {`flex flex-col w-1/2  space-y-2 justify-center mt-8 sm:space-y-0
           sm:flex-row sm:space-x-4 `}>
-           <button onClick = {search} className = "button">Google Search </button>
-           <button onClick = {search} className = "button ">I'm feeling Lucky </button>
+           <button onClick = { search } className = "button">Google Search </button>
+           <button onClick = { search } className = "button ">I'm feeling Lucky </button>
          </div>
 
        </form>
