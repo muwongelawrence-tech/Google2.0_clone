@@ -2,11 +2,13 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 import Header from '../components/Header';
+import SearchResults from '../components/SearchResults';
 import Response from '../Response';
 
 
 function Search({ results }) {
-     console.log(results);
+     
+    //console.log(results);
 
      const router = useRouter();
     //  const { term } = router.query;
@@ -23,6 +25,8 @@ function Search({ results }) {
        <Header />
 
        {/* Search Results */}
+
+       <SearchResults results = { results } />
        
     </div>
   );
@@ -32,7 +36,7 @@ export default Search;
 
 export async function getServerSideProps(context){ 
 
-   const useDummyData = false;
+   const useDummyData = true;
    const startIndex = context.query.start || "0";
 
   const data = useDummyData ? Response :
