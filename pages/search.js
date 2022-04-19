@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 import Header from '../components/Header';
+import PaginationButtons from '../components/PaginationButtons';
 import SearchResults from '../components/SearchResults';
 import Response from '../Response';
 
@@ -27,6 +28,8 @@ function Search({ results }) {
        {/* Search Results */}
 
        <SearchResults results = { results } />
+
+       {/* <PaginationButtons /> */}
        
     </div>
   );
