@@ -34,6 +34,8 @@ export default function SearchResults({ results }) {
             </div>
          ))}
 
+
+            {/* pagination */}
          <PaginationButtons />
     </div>
   );

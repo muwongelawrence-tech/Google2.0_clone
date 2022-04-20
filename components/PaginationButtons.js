@@ -16,7 +16,7 @@ export default function PaginationButtons() {
             startIndex >= 10 && (
                  <Link href={`/search?term=${ router.query.term }&start=${startIndex - 10}`}>
                     <div className='flex flex-grow flex-col items-center cursor-pointer hover:underline'>
-                        <ChevronLeftIcon className='h-5 ' />
+                        <ChevronLeftIcon className='h-5' />
                         <p className=''> Previous </p>
                     </div>
                  </Link>
@@ -25,7 +25,7 @@ export default function PaginationButtons() {
 
         <Link href={`/search?term=${ router.query.term }&start=${startIndex + 10}`}>
            <div className='flex flex-grow flex-col items-center cursor-pointer hover:underline'>
-              <CheveronRightIcon  className="h-5 "/> 
+              <CheveronRightIcon  className=" h-5 "/> 
            </div>
         </Link>
 
