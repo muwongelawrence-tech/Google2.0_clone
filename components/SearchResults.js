@@ -12,6 +12,7 @@ export default function SearchResults({ results }) {
         </p>
 
         { results.items?.map((result) => (
+            
             <div key = { result.link } className='max-w-xl mb-8'> 
 
                <div className='group'>
