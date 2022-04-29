@@ -36,7 +36,7 @@ export default function SearchResults({ results }) {
          ))}
 
 
-            {/* Adding pagination  */}
+            {/* Adding pagination   */}
           <PaginationButtons /> 
 
     </div>

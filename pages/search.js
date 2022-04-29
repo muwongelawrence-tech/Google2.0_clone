@@ -2,18 +2,16 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 import Header from '../components/Header';
-import PaginationButtons from '../components/PaginationButtons';
 import SearchResults from '../components/SearchResults';
 import Response from '../Response';
 
 
 function Search({ results }) {
      
-    //console.log(results);
+    // console.log(results);
 
      const router = useRouter();
-    //  const { term } = router.query;
-    //  console.log(term);
+   
 
   return (
     <div className="">
