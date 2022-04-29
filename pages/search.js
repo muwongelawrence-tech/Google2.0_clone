@@ -41,7 +41,7 @@ export async function getServerSideProps(context){
 
    const useDummyData = true;
 
-   const startIndex = context.query.start || 0;
+   const startIndex = context.query.start || "0";
 
   const data = useDummyData ? Response :
   await fetch(`https://www.googleapis.com/customsearch/v1?key=${ process.env.Api_key }
