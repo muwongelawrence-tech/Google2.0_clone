@@ -1,4 +1,5 @@
 import React from 'react';
+import Pagination from './Pagination';
 import PaginationButtons from "./PaginationButtons";
 
 export default function SearchResults({ results }) {
@@ -37,7 +38,8 @@ export default function SearchResults({ results }) {
 
 
             {/* pagination */}
-         <PaginationButtons />
+         {/* <PaginationButtons /> */}
+            <Pagination />
     </div>
   );
 }
